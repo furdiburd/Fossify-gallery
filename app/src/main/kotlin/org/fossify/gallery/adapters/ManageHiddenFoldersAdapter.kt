@@ -10,8 +10,8 @@ import org.fossify.commons.extensions.isPathOnSD
 import org.fossify.commons.extensions.setupViewBackground
 import org.fossify.commons.interfaces.RefreshRecyclerViewListener
 import org.fossify.commons.views.MyRecyclerView
-import org.fossify.gallery.R
-import org.fossify.gallery.databinding.ItemManageFolderBinding
+import fr.oupson.pocjxlgallery.R
+import fr.oupson.pocjxlgallery.databinding.ItemManageFolderBinding
 import org.fossify.gallery.extensions.removeNoMedia
 
 class ManageHiddenFoldersAdapter(

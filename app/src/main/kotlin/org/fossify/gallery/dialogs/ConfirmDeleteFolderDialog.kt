@@ -4,7 +4,7 @@ import android.app.Activity
 import androidx.appcompat.app.AlertDialog
 import org.fossify.commons.extensions.getAlertDialogBuilder
 import org.fossify.commons.extensions.setupDialogStuff
-import org.fossify.gallery.databinding.DialogConfirmDeleteFolderBinding
+import fr.oupson.pocjxlgallery.databinding.DialogConfirmDeleteFolderBinding
 
 class ConfirmDeleteFolderDialog(activity: Activity, message: String, warningMessage: String, val callback: () -> Unit) {
     private var dialog: AlertDialog? = null

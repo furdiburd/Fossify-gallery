@@ -8,8 +8,8 @@ import org.fossify.commons.extensions.hideKeyboard
 import org.fossify.commons.extensions.setupDialogStuff
 import org.fossify.commons.extensions.value
 import org.fossify.commons.models.RadioItem
-import org.fossify.gallery.R
-import org.fossify.gallery.databinding.DialogSlideshowBinding
+import fr.oupson.pocjxlgallery.R
+import fr.oupson.pocjxlgallery.databinding.DialogSlideshowBinding
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.helpers.SLIDESHOW_ANIMATION_FADE
 import org.fossify.gallery.helpers.SLIDESHOW_ANIMATION_NONE

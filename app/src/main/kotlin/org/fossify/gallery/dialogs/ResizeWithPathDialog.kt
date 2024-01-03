@@ -7,8 +7,8 @@ import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.dialogs.ConfirmationDialog
 import org.fossify.commons.dialogs.FilePickerDialog
 import org.fossify.commons.extensions.*
-import org.fossify.gallery.R
-import org.fossify.gallery.databinding.DialogResizeImageWithPathBinding
+import fr.oupson.pocjxlgallery.R
+import fr.oupson.pocjxlgallery.databinding.DialogResizeImageWithPathBinding
 import org.fossify.gallery.extensions.config
 
 class ResizeWithPathDialog(val activity: BaseSimpleActivity, val size: Point, val path: String, val callback: (newSize: Point, newPath: String) -> Unit) {

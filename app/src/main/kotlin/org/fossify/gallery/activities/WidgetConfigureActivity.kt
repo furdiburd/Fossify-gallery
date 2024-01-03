@@ -12,8 +12,8 @@ import com.bumptech.glide.signature.ObjectKey
 import org.fossify.commons.dialogs.ColorPickerDialog
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.ensureBackgroundThread
-import org.fossify.gallery.R
-import org.fossify.gallery.databinding.ActivityWidgetConfigBinding
+import fr.oupson.pocjxlgallery.R
+import fr.oupson.pocjxlgallery.databinding.ActivityWidgetConfigBinding
 import org.fossify.gallery.dialogs.PickDirectoryDialog
 import org.fossify.gallery.extensions.*
 import org.fossify.gallery.helpers.MyWidgetProvider

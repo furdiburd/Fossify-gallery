@@ -5,8 +5,8 @@ import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.extensions.beVisibleIf
 import org.fossify.commons.extensions.getAlertDialogBuilder
 import org.fossify.commons.extensions.setupDialogStuff
-import org.fossify.gallery.R
-import org.fossify.gallery.databinding.DialogChangeGroupingBinding
+import fr.oupson.pocjxlgallery.R
+import fr.oupson.pocjxlgallery.databinding.DialogChangeGroupingBinding
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.helpers.*
 

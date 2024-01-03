@@ -5,7 +5,7 @@ import org.fossify.commons.extensions.applyColorFilter
 import org.fossify.commons.extensions.getAlertDialogBuilder
 import org.fossify.commons.extensions.getProperTextColor
 import org.fossify.commons.extensions.setupDialogStuff
-import org.fossify.gallery.databinding.DialogGrantAllFilesBinding
+import fr.oupson.pocjxlgallery.databinding.DialogGrantAllFilesBinding
 import org.fossify.gallery.extensions.launchGrantAllFilesIntent
 
 class GrantAllFilesDialog(val activity: BaseSimpleActivity) {

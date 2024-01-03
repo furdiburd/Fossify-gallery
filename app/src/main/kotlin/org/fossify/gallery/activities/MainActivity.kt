@@ -23,11 +23,11 @@ import org.fossify.commons.models.RadioItem
 import org.fossify.commons.models.Release
 import org.fossify.commons.views.MyGridLayoutManager
 import org.fossify.commons.views.MyRecyclerView
-import org.fossify.gallery.BuildConfig
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.BuildConfig
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.adapters.DirectoryAdapter
 import org.fossify.gallery.databases.GalleryDatabase
-import org.fossify.gallery.databinding.ActivityMainBinding
+import fr.oupson.pocjxlgallery.databinding.ActivityMainBinding
 import org.fossify.gallery.dialogs.ChangeSortingDialog
 import org.fossify.gallery.dialogs.ChangeViewTypeDialog
 import org.fossify.gallery.dialogs.FilterMediaDialog

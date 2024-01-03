@@ -9,7 +9,7 @@ import org.fossify.commons.extensions.getProperTextColor
 import org.fossify.commons.extensions.setupViewBackground
 import org.fossify.commons.interfaces.RefreshRecyclerViewListener
 import org.fossify.commons.views.MyRecyclerView
-import org.fossify.gallery.databinding.ItemManageFolderBinding
+import fr.oupson.pocjxlgallery.databinding.ItemManageFolderBinding
 import org.fossify.gallery.extensions.config
 
 class ManageFoldersAdapter(

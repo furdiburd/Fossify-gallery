@@ -8,9 +8,9 @@ import org.fossify.commons.extensions.viewBinding
 import org.fossify.commons.helpers.NavigationIcon
 import org.fossify.commons.helpers.ensureBackgroundThread
 import org.fossify.commons.interfaces.RefreshRecyclerViewListener
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.adapters.ManageHiddenFoldersAdapter
-import org.fossify.gallery.databinding.ActivityManageFoldersBinding
+import fr.oupson.pocjxlgallery.databinding.ActivityManageFoldersBinding
 import org.fossify.gallery.extensions.addNoMedia
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.extensions.getNoMediaFolders

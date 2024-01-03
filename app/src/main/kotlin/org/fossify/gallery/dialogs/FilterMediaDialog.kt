@@ -3,8 +3,8 @@ package org.fossify.gallery.dialogs
 import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.extensions.getAlertDialogBuilder
 import org.fossify.commons.extensions.setupDialogStuff
-import org.fossify.gallery.R
-import org.fossify.gallery.databinding.DialogFilterMediaBinding
+import fr.oupson.pocjxlgallery.R
+import fr.oupson.pocjxlgallery.databinding.DialogFilterMediaBinding
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.helpers.*
 

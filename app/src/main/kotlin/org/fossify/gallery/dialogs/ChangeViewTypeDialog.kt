@@ -6,7 +6,7 @@ import org.fossify.commons.extensions.getAlertDialogBuilder
 import org.fossify.commons.extensions.setupDialogStuff
 import org.fossify.commons.helpers.VIEW_TYPE_GRID
 import org.fossify.commons.helpers.VIEW_TYPE_LIST
-import org.fossify.gallery.databinding.DialogChangeViewTypeBinding
+import fr.oupson.pocjxlgallery.databinding.DialogChangeViewTypeBinding
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.helpers.SHOW_ALL
 

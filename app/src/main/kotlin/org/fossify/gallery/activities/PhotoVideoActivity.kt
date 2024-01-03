@@ -13,9 +13,9 @@ import android.widget.RelativeLayout
 import org.fossify.commons.dialogs.PropertiesDialog
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.*
-import org.fossify.gallery.BuildConfig
-import org.fossify.gallery.R
-import org.fossify.gallery.databinding.FragmentHolderBinding
+import fr.oupson.pocjxlgallery.BuildConfig
+import fr.oupson.pocjxlgallery.R
+import fr.oupson.pocjxlgallery.databinding.FragmentHolderBinding
 import org.fossify.gallery.extensions.*
 import org.fossify.gallery.fragments.PhotoFragment
 import org.fossify.gallery.fragments.VideoFragment

@@ -35,10 +35,10 @@ import org.fossify.commons.helpers.REAL_FILE_PATH
 import org.fossify.commons.helpers.ensureBackgroundThread
 import org.fossify.commons.helpers.isNougatPlus
 import org.fossify.commons.models.FileDirItem
-import org.fossify.gallery.BuildConfig
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.BuildConfig
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.adapters.FiltersAdapter
-import org.fossify.gallery.databinding.ActivityEditBinding
+import fr.oupson.pocjxlgallery.databinding.ActivityEditBinding
 import org.fossify.gallery.dialogs.OtherAspectRatioDialog
 import org.fossify.gallery.dialogs.ResizeDialog
 import org.fossify.gallery.dialogs.SaveAsDialog

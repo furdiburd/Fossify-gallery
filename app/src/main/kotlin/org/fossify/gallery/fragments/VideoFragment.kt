@@ -26,9 +26,9 @@ import androidx.media3.exoplayer.source.ProgressiveMediaSource
 import com.bumptech.glide.Glide
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.ensureBackgroundThread
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.activities.VideoActivity
-import org.fossify.gallery.databinding.PagerVideoItemBinding
+import fr.oupson.pocjxlgallery.databinding.PagerVideoItemBinding
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.extensions.hasNavBar
 import org.fossify.gallery.extensions.parseFileChannel

@@ -15,7 +15,7 @@ import org.fossify.commons.extensions.getFileSignature
 import org.fossify.commons.extensions.setText
 import org.fossify.commons.extensions.setVisibleIf
 import org.fossify.commons.helpers.ensureBackgroundThread
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.activities.MediaActivity
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.extensions.directoryDB

@@ -24,11 +24,11 @@ import org.fossify.commons.models.FileDirItem
 import org.fossify.commons.models.RadioItem
 import org.fossify.commons.views.MyGridLayoutManager
 import org.fossify.commons.views.MyRecyclerView
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.adapters.MediaAdapter
 import org.fossify.gallery.asynctasks.GetMediaAsynctask
 import org.fossify.gallery.databases.GalleryDatabase
-import org.fossify.gallery.databinding.ActivityMediaBinding
+import fr.oupson.pocjxlgallery.databinding.ActivityMediaBinding
 import org.fossify.gallery.dialogs.*
 import org.fossify.gallery.extensions.*
 import org.fossify.gallery.helpers.*

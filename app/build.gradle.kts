@@ -108,6 +108,7 @@ dependencies {
     implementation(libs.awebp)
     implementation(libs.apng)
     implementation(libs.okio)
+    implementation(libs.jxlviewer)
     implementation(libs.picasso) {
         exclude(group = "com.squareup.okhttp3", module = "okhttp")
     }

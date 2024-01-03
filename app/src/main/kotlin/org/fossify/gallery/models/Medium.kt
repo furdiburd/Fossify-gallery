@@ -52,6 +52,8 @@ data class Medium(
 
     fun isApng() = name.isApng()
 
+    fun isJxl() = name.endsWith(".jxl")
+
     fun isHidden() = name.startsWith('.')
 
     fun isHeic() = name.lowercase(Locale.getDefault()).endsWith(".heic") || name.lowercase(Locale.getDefault()).endsWith(".heif")

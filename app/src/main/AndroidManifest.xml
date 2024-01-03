@@ -32,8 +32,8 @@
         tools:node="remove" />
 
     <queries>
-        <package android:name="org.fossify.gallery.debug" />
-        <package android:name="org.fossify.gallery" />
+        <package android:name="fr.oupson.pocjxlgallery.debug" />
+        <package android:name="fr.oupson.pocjxlgallery" />
     </queries>
 
     <uses-feature
@@ -54,12 +54,12 @@
         tools:replace="android:label">
 
         <activity
-            android:name=".activities.SplashActivity"
+            android:name="org.fossify.gallery.activities.SplashActivity"
             android:exported="false"
             android:theme="@style/SplashTheme" />
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name="org.fossify.gallery.activities.MainActivity"
             android:configChanges="orientation"
             android:exported="true"
             android:resizeableActivity="true">
@@ -88,24 +88,24 @@
         </activity>
 
         <activity
-            android:name=".activities.MediaActivity"
+            android:name="org.fossify.gallery.activities.MediaActivity"
             android:configChanges="orientation"
             android:exported="false"
-            android:parentActivityName=".activities.MainActivity" />
+            android:parentActivityName="org.fossify.gallery.activities.MainActivity" />
 
         <activity
-            android:name=".activities.SearchActivity"
+            android:name="org.fossify.gallery.activities.SearchActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/search"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="org.fossify.gallery.activities.MainActivity"
             android:resizeableActivity="true" />
 
         <activity
-            android:name=".activities.ViewPagerActivity"
+            android:name="org.fossify.gallery.activities.ViewPagerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:parentActivityName=".activities.MediaActivity"
+            android:parentActivityName="org.fossify.gallery.activities.MediaActivity"
             android:theme="@style/TranslucentTheme">
 
             <intent-filter>
@@ -124,21 +124,21 @@
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/about"
-            android:parentActivityName=".activities.MainActivity" />
+            android:parentActivityName="org.fossify.gallery.activities.MainActivity" />
 
         <activity
             android:name="org.fossify.commons.activities.CustomizationActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/customize_colors"
-            android:parentActivityName=".activities.SettingsActivity" />
+            android:parentActivityName="org.fossify.gallery.activities.SettingsActivity" />
 
         <activity
-            android:name=".activities.SettingsActivity"
+            android:name="org.fossify.gallery.activities.SettingsActivity"
             android:configChanges="orientation"
             android:exported="true"
             android:label="@string/settings"
-            android:parentActivityName=".activities.MainActivity">
+            android:parentActivityName="org.fossify.gallery.activities.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
@@ -147,41 +147,41 @@
         </activity>
 
         <activity
-            android:name=".activities.PhotoVideoActivity"
+            android:name="org.fossify.gallery.activities.PhotoVideoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:theme="@style/TranslucentTheme" />
 
         <activity
-            android:name=".activities.VideoPlayerActivity"
+            android:name="org.fossify.gallery.activities.VideoPlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
-            android:parentActivityName=".activities.MediaActivity"
+            android:parentActivityName="org.fossify.gallery.activities.MediaActivity"
             android:theme="@style/TranslucentTheme" />
 
         <activity
-            android:name=".activities.IncludedFoldersActivity"
+            android:name="org.fossify.gallery.activities.IncludedFoldersActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/include_folders"
-            android:parentActivityName=".activities.SettingsActivity" />
+            android:parentActivityName="org.fossify.gallery.activities.SettingsActivity" />
 
         <activity
-            android:name=".activities.ExcludedFoldersActivity"
+            android:name="org.fossify.gallery.activities.ExcludedFoldersActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/excluded_folders"
-            android:parentActivityName=".activities.SettingsActivity" />
+            android:parentActivityName="org.fossify.gallery.activities.SettingsActivity" />
 
         <activity
-            android:name=".activities.HiddenFoldersActivity"
+            android:name="org.fossify.gallery.activities.HiddenFoldersActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/hidden_folders"
-            android:parentActivityName=".activities.SettingsActivity" />
+            android:parentActivityName="org.fossify.gallery.activities.SettingsActivity" />
 
         <activity
-            android:name=".activities.PhotoActivity"
+            android:name="org.fossify.gallery.activities.PhotoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true">
             <intent-filter>
@@ -195,7 +195,7 @@
         </activity>
 
         <activity
-            android:name=".activities.VideoActivity"
+            android:name="org.fossify.gallery.activities.VideoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true">
             <intent-filter>
@@ -237,7 +237,7 @@
         </activity>
 
         <activity
-            android:name=".activities.SetWallpaperActivity"
+            android:name="org.fossify.gallery.activities.SetWallpaperActivity"
             android:configChanges="orientation"
             android:exported="true"
             android:label="@string/wallpaper">
@@ -257,7 +257,7 @@
         </activity>
 
         <activity
-            android:name=".activities.WidgetConfigureActivity"
+            android:name="org.fossify.gallery.activities.WidgetConfigureActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/MyWidgetConfigTheme">
@@ -277,7 +277,7 @@
         </provider>
 
         <receiver
-            android:name=".receivers.RefreshMediaReceiver"
+            android:name="org.fossify.gallery.receivers.RefreshMediaReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="org.fossify.REFRESH_MEDIA" />
@@ -285,7 +285,7 @@
         </receiver>
 
         <receiver
-            android:name=".helpers.MyWidgetProvider"
+            android:name="org.fossify.gallery.helpers.MyWidgetProvider"
             android:exported="true"
             android:icon="@drawable/img_widget_preview"
             android:label="@string/folder">
@@ -299,7 +299,7 @@
         </receiver>
 
         <receiver
-            android:name=".receivers.BootCompletedReceiver"
+            android:name="org.fossify.gallery.receivers.BootCompletedReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -309,7 +309,7 @@
         </receiver>
 
         <service
-            android:name=".jobs.NewPhotoFetcher"
+            android:name="org.fossify.gallery.jobs.NewPhotoFetcher"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
@@ -319,7 +319,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_red"
             android:roundIcon="@mipmap/ic_launcher_red"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -333,7 +333,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_pink"
             android:roundIcon="@mipmap/ic_launcher_pink"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -347,7 +347,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_purple"
             android:roundIcon="@mipmap/ic_launcher_purple"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -361,7 +361,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_deep_purple"
             android:roundIcon="@mipmap/ic_launcher_deep_purple"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -375,7 +375,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_indigo"
             android:roundIcon="@mipmap/ic_launcher_indigo"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -389,7 +389,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_blue"
             android:roundIcon="@mipmap/ic_launcher_blue"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -403,7 +403,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_light_blue"
             android:roundIcon="@mipmap/ic_launcher_light_blue"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -417,7 +417,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_cyan"
             android:roundIcon="@mipmap/ic_launcher_cyan"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -431,7 +431,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_teal"
             android:roundIcon="@mipmap/ic_launcher_teal"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -445,7 +445,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher"
             android:roundIcon="@mipmap/ic_launcher"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -459,7 +459,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_light_green"
             android:roundIcon="@mipmap/ic_launcher_light_green"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -473,7 +473,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_lime"
             android:roundIcon="@mipmap/ic_launcher_lime"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -487,7 +487,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_yellow"
             android:roundIcon="@mipmap/ic_launcher_yellow"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -501,7 +501,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_amber"
             android:roundIcon="@mipmap/ic_launcher_amber"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -515,7 +515,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_orange"
             android:roundIcon="@mipmap/ic_launcher_orange"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -528,7 +528,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_deep_orange"
             android:roundIcon="@mipmap/ic_launcher_deep_orange"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -542,7 +542,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_brown"
             android:roundIcon="@mipmap/ic_launcher_brown"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -556,7 +556,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_blue_grey"
             android:roundIcon="@mipmap/ic_launcher_blue_grey"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -570,7 +570,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_grey_black"
             android:roundIcon="@mipmap/ic_launcher_grey_black"
-            android:targetActivity=".activities.SplashActivity">
+            android:targetActivity="org.fossify.gallery.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

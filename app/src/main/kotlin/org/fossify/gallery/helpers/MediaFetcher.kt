@@ -13,7 +13,7 @@ import android.provider.MediaStore.Images
 import android.text.format.DateFormat
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.*
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.extensions.*
 import org.fossify.gallery.models.Medium
 import org.fossify.gallery.models.ThumbnailItem
@@ -31,7 +31,7 @@ class MediaFetcher(val context: Context) {
         getProperFileSize: Boolean, favoritePaths: ArrayList<String>, getVideoDurations: Boolean,
         lastModifieds: HashMap<String, Long>, dateTakens: HashMap<String, Long>, android11Files: HashMap<String, ArrayList<Medium>>?
     ): ArrayList<Medium> {
-        val filterMedia = context.config.filterMedia
+         val filterMedia = context.config.filterMedia
         if (filterMedia == 0) {
             return ArrayList()
         }
@@ -182,6 +182,7 @@ class MediaFetcher(val context: Context) {
             photoExtensions.forEach {
                 query.append("${Images.Media.DATA} LIKE ? OR ")
             }
+            query.append("${Images.Media.DATA} LIKE ? OR ")
         }
 
         if (filterMedia and TYPE_PORTRAITS != 0) {
@@ -218,6 +219,7 @@ class MediaFetcher(val context: Context) {
             photoExtensions.forEach {
                 args.add("%$it")
             }
+            args.add("%.jxl")
         }
 
         if (filterMedia and TYPE_PORTRAITS != 0) {
@@ -318,7 +320,7 @@ class MediaFetcher(val context: Context) {
 
             var path = file.absolutePath
             var isPortrait = false
-            val isImage = path.isImageFast()
+            val isImage = path.isImageFast() || path.endsWith(".jxl")
             val isVideo = if (isImage) false else path.isVideoFast()
             val isGif = if (isImage || isVideo) false else path.isGif()
             val isRaw = if (isImage || isVideo || isGif) false else path.isRawFast()

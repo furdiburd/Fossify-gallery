@@ -13,12 +13,14 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.util.DisplayMetrics
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.exifinterface.media.ExifInterface.*
+import androidx.lifecycle.lifecycleScope
 import com.alexvasilkov.gestures.GestureController
 import com.alexvasilkov.gestures.State
 import com.bumptech.glide.Glide
@@ -39,19 +41,23 @@ import com.github.penfeizhou.animation.apng.APNGDrawable
 import com.github.penfeizhou.animation.webp.WebPDrawable
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
+import fr.oupson.libjxl.JxlDecoder
 import it.sephiroth.android.library.exif2.ExifInterface
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import org.apache.sanselan.common.byteSources.ByteSourceInputStream
 import org.apache.sanselan.formats.jpeg.JpegImageParser
 import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.ensureBackgroundThread
 import org.fossify.commons.helpers.isRPlus
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.activities.PhotoActivity
 import org.fossify.gallery.activities.PhotoVideoActivity
 import org.fossify.gallery.activities.ViewPagerActivity
 import org.fossify.gallery.adapters.PortraitPhotosAdapter
-import org.fossify.gallery.databinding.PagerPhotoItemBinding
+import fr.oupson.pocjxlgallery.databinding.PagerPhotoItemBinding
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.extensions.saveRotatedImageToFile
 import org.fossify.gallery.extensions.sendFakeClick
@@ -60,6 +66,7 @@ import org.fossify.gallery.models.Medium
 import org.fossify.gallery.svg.SvgSoftwareLayerSetter
 import pl.droidsonroids.gif.InputSource
 import java.io.File
+import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.util.Locale
 import kotlin.math.ceil
@@ -377,11 +384,32 @@ class PhotoFragment : ViewPagerFragment() {
             mImageOrientation = getImageOrientation()
             activity?.runOnUiThread {
                 when {
+                    mMedium.isJxl() -> loadJxl()
                     mMedium.isGIF() -> loadGif()
                     mMedium.isSVG() -> loadSVG()
                     mMedium.isApng() -> loadAPNG()
                     else -> loadBitmap()
                 }
+            }
+        }
+    }
+
+    private fun loadJxl() {
+        val path = getFilePathToShow()
+
+        lifecycleScope.launch(Dispatchers.IO) {
+            try {
+                val content = FileInputStream(path).use { it.readBytes() }
+                val btm = JxlDecoder.loadJxl(content)
+
+                if (btm != null) {
+                    withContext(Dispatchers.Main) {
+                        binding.gesturesView.setImageDrawable(btm)
+                        btm.start()
+                    }
+                }
+            } catch (e : Exception) {
+                Log.e("PhotoFragment", "Failed to load jxl", e)
             }
         }
     }

@@ -8,11 +8,11 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.extensions.*
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.adapters.toItemBinding
-import org.fossify.gallery.databinding.DialogChangeFolderThumbnailStyleBinding
-import org.fossify.gallery.databinding.DirectoryItemGridRoundedCornersBinding
-import org.fossify.gallery.databinding.DirectoryItemGridSquareBinding
+import fr.oupson.pocjxlgallery.databinding.DialogChangeFolderThumbnailStyleBinding
+import fr.oupson.pocjxlgallery.databinding.DirectoryItemGridRoundedCornersBinding
+import fr.oupson.pocjxlgallery.databinding.DirectoryItemGridSquareBinding
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.helpers.*
 

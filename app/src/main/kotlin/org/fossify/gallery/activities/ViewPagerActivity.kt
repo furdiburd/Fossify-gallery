@@ -39,11 +39,11 @@ import org.fossify.commons.dialogs.RenameItemDialog
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.*
 import org.fossify.commons.models.FileDirItem
-import org.fossify.gallery.BuildConfig
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.BuildConfig
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.adapters.MyPagerAdapter
 import org.fossify.gallery.asynctasks.GetMediaAsynctask
-import org.fossify.gallery.databinding.ActivityMediumBinding
+import fr.oupson.pocjxlgallery.databinding.ActivityMediumBinding
 import org.fossify.gallery.dialogs.DeleteWithRememberDialog
 import org.fossify.gallery.dialogs.SaveAsDialog
 import org.fossify.gallery.dialogs.SlideshowDialog

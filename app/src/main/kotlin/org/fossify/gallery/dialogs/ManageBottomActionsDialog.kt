@@ -3,7 +3,7 @@ package org.fossify.gallery.dialogs
 import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.extensions.getAlertDialogBuilder
 import org.fossify.commons.extensions.setupDialogStuff
-import org.fossify.gallery.databinding.DialogManageBottomActionsBinding
+import fr.oupson.pocjxlgallery.databinding.DialogManageBottomActionsBinding
 import org.fossify.gallery.extensions.config
 import org.fossify.gallery.helpers.*
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">گالری</string>
+    <string name="app_launcher_name">گالری - POC JXL</string>
     <string name="edit">ویرایش</string>
     <string name="open_camera">گشودن دوربین</string>
     <string name="hidden">(پنهان)</string>

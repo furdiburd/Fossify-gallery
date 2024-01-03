@@ -5,8 +5,8 @@ import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.dialogs.ConfirmationDialog
 import org.fossify.commons.dialogs.FilePickerDialog
 import org.fossify.commons.extensions.*
-import org.fossify.gallery.R
-import org.fossify.gallery.databinding.DialogExportFavoritesBinding
+import fr.oupson.pocjxlgallery.R
+import fr.oupson.pocjxlgallery.databinding.DialogExportFavoritesBinding
 import org.fossify.gallery.extensions.config
 
 class ExportFavoritesDialog(

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AlertDialog
 import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.extensions.getAlertDialogBuilder
 import org.fossify.commons.extensions.setupDialogStuff
-import org.fossify.gallery.databinding.DialogOtherAspectRatioBinding
+import fr.oupson.pocjxlgallery.databinding.DialogOtherAspectRatioBinding
 
 class OtherAspectRatioDialog(
     val activity: BaseSimpleActivity,

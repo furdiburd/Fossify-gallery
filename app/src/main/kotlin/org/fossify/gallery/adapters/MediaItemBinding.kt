@@ -4,10 +4,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import org.fossify.commons.views.MySquareImageView
-import org.fossify.gallery.databinding.PhotoItemGridBinding
-import org.fossify.gallery.databinding.PhotoItemListBinding
-import org.fossify.gallery.databinding.VideoItemGridBinding
-import org.fossify.gallery.databinding.VideoItemListBinding
+import fr.oupson.pocjxlgallery.databinding.PhotoItemGridBinding
+import fr.oupson.pocjxlgallery.databinding.PhotoItemListBinding
+import fr.oupson.pocjxlgallery.databinding.VideoItemGridBinding
+import fr.oupson.pocjxlgallery.databinding.VideoItemListBinding
 
 interface MediaItemBinding {
     val root: ViewGroup

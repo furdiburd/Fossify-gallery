@@ -6,7 +6,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import org.fossify.commons.extensions.getProperPrimaryColor
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.models.PaintOptions
 
 class EditorDrawCanvas(context: Context, attrs: AttributeSet) : View(context, attrs) {

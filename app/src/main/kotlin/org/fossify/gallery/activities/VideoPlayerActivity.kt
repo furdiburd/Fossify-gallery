@@ -26,8 +26,8 @@ import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import androidx.media3.exoplayer.source.MediaSource
 import androidx.media3.exoplayer.source.ProgressiveMediaSource
 import org.fossify.commons.extensions.*
-import org.fossify.gallery.R
-import org.fossify.gallery.databinding.ActivityVideoPlayerBinding
+import fr.oupson.pocjxlgallery.R
+import fr.oupson.pocjxlgallery.databinding.ActivityVideoPlayerBinding
 import org.fossify.gallery.extensions.*
 import org.fossify.gallery.helpers.*
 

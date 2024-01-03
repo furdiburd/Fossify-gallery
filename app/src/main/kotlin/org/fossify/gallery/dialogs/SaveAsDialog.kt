@@ -6,7 +6,7 @@ import org.fossify.commons.dialogs.ConfirmationDialog
 import org.fossify.commons.dialogs.FilePickerDialog
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.isRPlus
-import org.fossify.gallery.databinding.DialogSaveAsBinding
+import fr.oupson.pocjxlgallery.databinding.DialogSaveAsBinding
 import java.io.File
 
 class SaveAsDialog(

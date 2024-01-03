@@ -30,6 +30,7 @@ okhttp = "4.9.0"
 okio = "3.0.0"
 picasso = "2.71828"
 subsamplingScaleImageView = "9c43e61fdb"
+jxlviewer = "0.4.0"
 #build
 app-build-compileSDKVersion = "34"
 app-build-targetSDK = "33"
@@ -37,7 +38,7 @@ app-build-minimumSDK = "23"
 app-build-javaVersion = "VERSION_17"
 app-build-kotlinJVMTarget = "17"
 #versioning
-app-version-appId = "org.fossify.gallery"
+app-version-appId = "fr.oupson.pocjxlgallery"
 app-version-versionCode = "4"
 app-version-versionName = "1.1.0"
 [libraries]
@@ -68,6 +69,7 @@ awebp = { module = "com.github.penfeizhou.android.animation:awebp", version.ref 
 glide-compiler = { module = "com.github.bumptech.glide:ksp", version.ref = "glideCompiler" }
 zjupure-webpdecoder = { module = "com.github.zjupure:webpdecoder", version.ref = "zjupureWebpdecoder" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+jxlviewer = { module = "com.github.oupson:jxlviewer", version.ref = "jxlviewer" }
 [bundles]
 room = [
     "androidx-room-ktx",

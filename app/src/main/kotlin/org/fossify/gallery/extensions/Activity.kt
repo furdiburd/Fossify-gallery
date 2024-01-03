@@ -34,8 +34,8 @@ import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.*
 import org.fossify.commons.models.FAQItem
 import org.fossify.commons.models.FileDirItem
-import org.fossify.gallery.BuildConfig
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.BuildConfig
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.activities.MediaActivity
 import org.fossify.gallery.activities.SettingsActivity
 import org.fossify.gallery.activities.SimpleActivity

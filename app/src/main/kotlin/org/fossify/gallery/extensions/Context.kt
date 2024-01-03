@@ -13,6 +13,8 @@ import android.os.Process
 import android.provider.MediaStore.Files
 import android.provider.MediaStore.Images
 import android.widget.ImageView
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
 import com.bumptech.glide.Priority
 import com.bumptech.glide.integration.webp.WebpBitmapFactory
@@ -33,10 +35,12 @@ import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.Target
 import com.bumptech.glide.signature.ObjectKey
 import com.squareup.picasso.Picasso
+import fr.oupson.libjxl.JxlDecoder
+import kotlinx.coroutines.*
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.*
 import org.fossify.commons.views.MySquareImageView
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.asynctasks.GetMediaAsynctask
 import org.fossify.gallery.databases.GalleryDatabase
 import org.fossify.gallery.helpers.*
@@ -478,9 +482,28 @@ fun Context.loadImage(
     target.isHorizontalScrolling = horizontalScroll
     if (type == TYPE_SVGS) {
         loadSVG(path, target, cropThumbnails, roundCorners, signature)
+    } else if (path.endsWith(".jxl")) {
+        loadJxl(path, target)
     } else {
         val tryLoadingWithPicasso = type == TYPE_IMAGES && path.isPng()
         loadImageBase(path, target, cropThumbnails, roundCorners, signature, skipMemoryCacheAtPaths, animateGifs, tryLoadingWithPicasso)
+    }
+}
+
+private fun Context.loadJxl(path : String, target : ImageView) {
+    val scope = (applicationContext as? LifecycleOwner)?.lifecycleScope ?: MainScope()
+    scope.launch(Dispatchers.IO) {
+        runCatching {
+            val content = FileInputStream(path).use { it.readBytes() }
+            val btm = JxlDecoder.loadJxl(content)
+
+            if (btm != null) {
+                withContext(Dispatchers.Main) {
+                    target.setImageDrawable(btm)
+                    btm.start()
+                }
+            }
+        }
     }
 }
 

@@ -29,11 +29,11 @@ import org.fossify.commons.interfaces.ItemTouchHelperContract
 import org.fossify.commons.interfaces.StartReorderDragListener
 import org.fossify.commons.models.FileDirItem
 import org.fossify.commons.views.MyRecyclerView
-import org.fossify.gallery.R
+import fr.oupson.pocjxlgallery.R
 import org.fossify.gallery.activities.MediaActivity
-import org.fossify.gallery.databinding.DirectoryItemGridRoundedCornersBinding
-import org.fossify.gallery.databinding.DirectoryItemGridSquareBinding
-import org.fossify.gallery.databinding.DirectoryItemListBinding
+import fr.oupson.pocjxlgallery.databinding.DirectoryItemGridRoundedCornersBinding
+import fr.oupson.pocjxlgallery.databinding.DirectoryItemGridSquareBinding
+import fr.oupson.pocjxlgallery.databinding.DirectoryItemListBinding
 import org.fossify.gallery.dialogs.ConfirmDeleteFolderDialog
 import org.fossify.gallery.dialogs.ExcludeFolderDialog
 import org.fossify.gallery.dialogs.PickMediumDialog
